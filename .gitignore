@@ -164,3 +164,6 @@ composer.phar
 # modules.xml
 # .idea/misc.xml
 # *.ipr
+/.idea/
+/.phpstorm.meta.php
+/_ide_helper.php
