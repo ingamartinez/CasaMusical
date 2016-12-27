@@ -1,0 +1,32 @@
+.header_top, .header-middle{
+    background-color: #ffed00;
+}
+
+.shop-menu ul li a:hover {
+    background-color: #9b001d;
+    color: #ffffff;
+    padding: 7px;
+}
+
+.shop-menu ul li a {
+    background: none;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.contactinfo ul li a {
+    font-size: 12px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+.social-icons ul li a {
+    border: 0 none;
+    border-radius: 0;
+    color: #333;
+    padding: 0px;
+}
+
+

@@ -12,6 +12,8 @@
     <link href="css/price-range.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/component.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -30,15 +32,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    {{--<div class="contactinfo">--}}
-                        {{--<ul class="nav nav-pills">--}}
-                            {{--<li><a href="#"><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>--}}
-                            {{--<li><a href="#"><i class="fa fa-envelope"></i> info@domain.com</a></li>--}}
-                        {{--</ul>--}}
-                    {{--</div>--}}
-                </div>
-                <div class="col-sm-6">
-                    <div class="social-icons pull-right">
+                    <div class="social-icons pull-left">
                         <ul class="nav navbar-nav">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -48,6 +42,15 @@
                         </ul>
                     </div>
                 </div>
+                <div class="col-sm-6">
+                    <div class="contactinfo pull-right">
+                        <ul class="nav nav-pills">
+                            <li><a href="#"><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i> info@domain.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div><!--/header_top-->
@@ -58,18 +61,25 @@
                 <div class="col-sm-4">
                     <div class="logo pull-left">
                         {{--<a href="index.html"><img src="images/home/logo.png" alt=""/></a>--}}
-                        <a href="index.html"><img class="img-resize-logo" src="images/home/cm-logo.png" alt=""/></a>
+                        <a href="index.html"><img class="img-resize-logo" src={{url('images/home/cm-logo.png')}} alt=""/></a>
                     </div>
                 </div>
                 <div class="col-sm-8">
                     <div class="shop-menu pull-right">
                         <ul class="nav navbar-nav">
-                            <li><a href="#"><i class="fa fa-user"></i> Account</a></li>
-                            <li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
-                            <li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
-                            <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-                            <li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
+                            <li><a href="#"><i class="fa fa-user"></i> Cuenta</a></li>
+                            <li><a href="#"><i class="fa fa-star"></i> Lista de deseos</a></li>
+                            {{--<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>--}}
+                            {{--<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>--}}
+                            <li><a href="login.html"><i class="fa fa-lock"></i> Ingresar</a></li>
                         </ul>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="shop-menu pull-right">
+                        <div class="search_box pull-right">
+                            <input type="text" placeholder="Buscar"/>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -79,44 +89,207 @@
     <div class="header-bottom"><!--header-bottom-->
         <div class="container">
             <div class="row">
-                <div class="col-sm-9">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div class="mainmenu pull-left">
-                        <ul class="nav navbar-nav collapse navbar-collapse">
-                            <li><a href="index.html" class="active">Home</a></li>
-                            <li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
-                                <ul role="menu" class="sub-menu">
-                                    <li><a href="shop.html">Products</a></li>
-                                    <li><a href="product-details.html">Product Details</a></li>
-                                    <li><a href="checkout.html">Checkout</a></li>
-                                    <li><a href="cart.html">Cart</a></li>
-                                    <li><a href="login.html">Login</a></li>
-                                </ul>
+                <div class="">
+                    <div id="cbp-hrmenu" class="cbp-hrmenu">
+                        <ul>
+                            <li>
+                                <a href="#">Products</a>
                             </li>
-                            <li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
-                                <ul role="menu" class="sub-menu">
-                                    <li><a href="blog.html">Blog List</a></li>
-                                    <li><a href="blog-single.html">Blog Single</a></li>
-                                </ul>
+                            <li>
+                                <a href="#">Downloads</a>
+                                <div class="cbp-hrsub">
+                                    <div class="cbp-hrsub-inner">
+                                        <div>
+                                            <h4>Education &amp; Learning</h4>
+                                            <ul>
+                                                <li><a href="#">Learn Thai</a></li>
+                                                <li><a href="#">Math Genius</a></li>
+                                                <li><a href="#">Chemokid</a></li>
+                                            </ul>
+                                            <h4>Professionals</h4>
+                                            <ul>
+                                                <li><a href="#">Success 1.0</a></li>
+                                                <li><a href="#">Moneymaker</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4>Entertainment</h4>
+                                            <ul>
+                                                <li><a href="#">Gadget Finder</a></li>
+                                                <li><a href="#">Green Tree Express</a></li>
+                                                <li><a href="#">Green Tree Pro</a></li>
+                                                <li><a href="#">Holy Cannoli</a></li>
+                                                <li><a href="#">Wobbler 3.0</a></li>
+                                                <li><a href="#">Coolkid</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4>Games</h4>
+                                            <ul>
+                                                <li><a href="#">Catch the Bullet</a></li>
+                                                <li><a href="#">Snoopydoo</a></li>
+                                                <li><a href="#">Fallen Angel</a></li>
+                                                <li><a href="#">Sui Maker</a></li>
+                                                <li><a href="#">Wave Master</a></li>
+                                                <li><a href="#">Golf Pro</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- /cbp-hrsub-inner -->
+                                </div><!-- /cbp-hrsub -->
                             </li>
-                            <li><a href="404.html">404</a></li>
-                            <li><a href="contact-us.html">Contact</a></li>
+                            <li>
+                                <a href="#">Applications</a>
+                                <div class="cbp-hrsub">
+                                    <div class="cbp-hrsub-inner">
+                                        <div>
+                                            <h4>Learning &amp; Games</h4>
+                                            <ul>
+                                                <li><a href="#">Catch the Bullet</a></li>
+                                                <li><a href="#">Snoopydoo</a></li>
+                                            </ul>
+                                            <h4>Utilities</h4>
+                                            <ul>
+                                                <li><a href="#">Gadget Finder</a></li>
+                                                <li><a href="#">Green Tree Express</a></li>
+                                                <li><a href="#">Green Tree Pro</a></li>
+                                                <li><a href="#">Wobbler 3.0</a></li>
+                                                <li><a href="#">Coolkid</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4>Education</h4>
+                                            <ul>
+                                                <li><a href="#">Learn Thai</a></li>
+                                                <li><a href="#">Math Genius</a></li>
+                                                <li><a href="#">Chemokid</a></li>
+                                            </ul>
+                                            <h4>Professionals</h4>
+                                            <ul>
+                                                <li><a href="#">Success 1.0</a></li>
+                                                <li><a href="#">Moneymaker</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- /cbp-hrsub-inner -->
+                                </div><!-- /cbp-hrsub -->
+                            </li>
+                            <li>
+                                <a href="#">Projects</a>
+                                <div class="cbp-hrsub">
+                                    <div class="cbp-hrsub-inner">
+                                        <div>
+                                            <h4>Learning &amp; Games</h4>
+                                            <ul>
+                                                <li><a href="#">Catch the Bullet</a></li>
+                                                <li><a href="#">Snoopydoo</a></li>
+                                                <li><a href="#">Fallen Angel</a></li>
+                                                <li><a href="#">Sui Maker</a></li>
+                                                <li><a href="#">Wave Master</a></li>
+                                                <li><a href="#">Golf Pro</a></li>
+                                            </ul>
+                                            <h4>Utilities</h4>
+                                            <ul>
+                                                <li><a href="#">Gadget Finder</a></li>
+                                                <li><a href="#">Green Tree Express</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4>Entertainment</h4>
+                                            <ul>
+                                                <li><a href="#">Gadget Finder</a></li>
+                                                <li><a href="#">Green Tree Express</a></li>
+                                                <li><a href="#">Green Tree Pro</a></li>
+                                                <li><a href="#">Holy Cannoli</a></li>
+                                                <li><a href="#">Wobbler 3.0</a></li>
+                                                <li><a href="#">Coolkid</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- /cbp-hrsub-inner -->
+                                </div><!-- /cbp-hrsub -->
+                            </li>
+                            <li>
+                                <a href="#">Freeware</a>
+                                <div class="cbp-hrsub">
+                                    <div class="cbp-hrsub-inner">
+                                        <div>
+                                            <h4>Utilities</h4>
+                                            <ul>
+                                                <li><a href="#">Green Tree Pro</a></li>
+                                                <li><a href="#">Wobbler 3.0</a></li>
+                                                <li><a href="#">Coolkid</a></li>
+                                            </ul>
+                                            <h4>Education</h4>
+                                            <ul>
+                                                <li><a href="#">Learn Thai</a></li>
+                                                <li><a href="#">Math Genius</a></li>
+                                                <li><a href="#">Chemokid</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4>Professionals</h4>
+                                            <ul>
+                                                <li><a href="#">Success 1.0</a></li>
+                                                <li><a href="#">Moneymaker</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4>Learning &amp; Games</h4>
+                                            <ul>
+                                                <li><a href="#">Catch the Bullet</a></li>
+                                                <li><a href="#">Snoopydoo</a></li>
+                                                <li><a href="#">Fallen Angel</a></li>
+                                                <li><a href="#">Sui Maker</a></li>
+                                                <li><a href="#">Wave Master</a></li>
+                                                <li><a href="#">Golf Pro</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- /cbp-hrsub-inner -->
+                                </div><!-- /cbp-hrsub -->
+                            </li>
+                            <li>
+                                <a href="#">Products 2</a>
+                                <div class="cbp-hrsub">
+                                    <div class="cbp-hrsub-inner">
+                                        <div>
+                                            <h4>Learning &amp; Games</h4>
+                                            <ul>
+                                                <li><a href="#">Catch the Bullet</a></li>
+                                                <li><a href="#">Snoopydoo</a></li>
+                                                <li><a href="#">Fallen Angel</a></li>
+                                                <li><a href="#">Sui Maker</a></li>
+                                                <li><a href="#">Wave Master</a></li>
+                                                <li><a href="#">Golf Pro</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4>Utilities</h4>
+                                            <ul>
+                                                <li><a href="#">Gadget Finder</a></li>
+                                                <li><a href="#">Green Tree Express</a></li>
+                                                <li><a href="#">Green Tree Pro</a></li>
+                                                <li><a href="#">Wobbler 3.0</a></li>
+                                                <li><a href="#">Coolkid</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4>Education</h4>
+                                            <ul>
+                                                <li><a href="#">Learn Thai</a></li>
+                                                <li><a href="#">Math Genius</a></li>
+                                                <li><a href="#">Chemokid</a></li>
+                                            </ul>
+                                            <h4>Professionals</h4>
+                                            <ul>
+                                                <li><a href="#">Success 1.0</a></li>
+                                                <li><a href="#">Moneymaker</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- /cbp-hrsub-inner -->
+                                </div><!-- /cbp-hrsub -->
+                            </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-3">
-                    <div class="search_box pull-right">
-                        <input type="text" placeholder="Search"/>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div><!--/header-bottom-->
@@ -136,7 +309,7 @@
 
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img src="https://scontent.feoh3-1.fna.fbcdn.net/t31.0-8/14372075_953095618150180_546759351148078433_o.jpg" class="img-responsive" alt=""/>
+                            <img src="https://scontent.feoh1-1.fna.fbcdn.net/v/t31.0-8/14372075_953095618150180_546759351148078433_o.jpg?oh=9d97b803c6d2970342e46742815c6b77&oe=58DFCC1C" class="img-responsive" alt=""/>
                         </div>
                         <div class="item">
                             <img src="images/home/banner1.PNG" class="img-responsive" alt=""/>
@@ -485,6 +658,14 @@
 <script src="js/jquery.scrollUp.min.js"></script>
 <script src="js/price-range.js"></script>
 <script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/modernizr.custom.js"></script>
 <script src="js/main.js"></script>
+<script src="js/cbpHorizontalMenu.js"></script>
+
+<script>
+    $(function() {
+        cbpHorizontalMenu.init();
+    });
+</script>
 </body>
 </html>
