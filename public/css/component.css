@@ -13,6 +13,7 @@ nav{
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+	font-size:1.1em;
 }
 
 /* first level ul style */
@@ -30,7 +31,7 @@ nav{
 
 .cbp-hrmenu > ul > li > a {
 	font-weight: 700;
-	padding: 1em 2em;
+	padding: 0.5em 1em;
 	color: #999;
 	display: inline-block;
 }
@@ -61,7 +62,7 @@ nav{
 }
 
 .cbp-hrmenu .cbp-hrsub-inner > div {
-	width: 33%;
+	width: 20%;
 	float: left;
 	padding: 0 2em 0;
 }
@@ -77,13 +78,7 @@ nav{
 }
 
 
-.cbp-hrsub h4 {
-	color: #afdefa;
-	padding: 2em 0 0.6em;
-	margin: 0;
-	font-size: 160%;
-	font-weight: 300;
-}
+
 
 /* Examples for media queries */
 

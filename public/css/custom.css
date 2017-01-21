@@ -61,3 +61,32 @@
     color: #333333;
     outline: none;
 }
+.cbp-hrmenu > ul > li.cbp-hropen a, .cbp-hrmenu > ul > li.active-nav {
+    color: #DDAD1C;
+    background: #DDAD1C;
+}
+
+.cbp-hrmenu > ul > li.active-nav > a {
+    color: #FFF;
+}
+
+.cbp-hrmenu ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cbp-hrmenu .cbp-hrsub-inner  ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.cbp-hrsub h4 {
+    color: #fff;
+    padding: 1.5em 0 0.6em;
+    margin: 0;
+    font-size: 100%;
+    font-weight: 600;
+}
+.cbp-hrsub  a:hover{
+    color: #ffed00 !important;
+}
