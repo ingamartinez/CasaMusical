@@ -4,7 +4,9 @@
     Inicio
 @endsection
 
-
+@section('header-bottom')
+    @include('home.includes.header-bottom')
+@endsection
 
 @push('script')
 

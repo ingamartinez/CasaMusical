@@ -30,6 +30,4 @@ class Categoria extends Model
         return $this->hasMany('App\Models\SubCategoria','categorias_id');
     }
 
-
-
 }

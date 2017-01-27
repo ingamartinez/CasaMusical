@@ -81,11 +81,11 @@
 }
 
 .cbp-hrsub h4 {
-    color: #fff;
-    padding: 1.5em 0 0.6em;
+    color: #afdefa;
+    padding: 2em 0 0.6em;
     margin: 0;
-    font-size: 100%;
-    font-weight: 600;
+    font-size: 160%;
+    font-weight: 300;
 }
 .cbp-hrsub  a:hover{
     color: #ffed00 !important;
